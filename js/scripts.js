@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	console.lor('ready');
+	console.log('ready');
 
 	$('.category').hide();
 
