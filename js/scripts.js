@@ -11,22 +11,22 @@ $(document).ready(function() {
 
 
 
-	$('.category-cake').hide();
+	// $('.category-cake').hide();
 
-	$('.category-flowers').hide();
+	// $('.category-flowers').hide();
 
-	$('.category-rings').hide();
+	// $('.category-rings').hide();
 
-	$('.category-shoes').hide();
+	// $('.category-shoes').hide();
 
-	$('.category-dress').hide();
+	// $('.category-dress').hide();
 
 
-	$('.category-locations').hide();
+	// $('.category-locations').hide();
 
-	$('.category-details').hide();
+	// $('.category-details').hide();
 
-	$('.category-favors').hide();
+	// $('.category-favors').hide();
 
 
    
