@@ -11,22 +11,23 @@ $(document).ready(function() {
 
 
 
-	// $('.category-cake').hide();
+	$('.category').hide();
 
-	// $('.category-flowers').hide();
+	$('nav').on('click', 'a', function() {
+		console.log('nav item clicked');
 
-	// $('.category-rings').hide();
+		var dot = '.';
+		var itemCategory = $(this).text().toLowerCase();	
+		$('.category').hide();
 
-	// $('.category-shoes').hide();
+		$(dot + itemCategory).show();
 
-	// $('.category-dress').hide();
+		console.log(dot + itemCategory)
 
 
-	// $('.category-locations').hide();
+	});
 
-	// $('.category-details').hide();
 
-	// $('.category-favors').hide();
 
 
    
