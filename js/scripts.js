@@ -8,7 +8,7 @@ $(document).ready(function() {
 	var category = {
 		"cake" :[
 			"opt1" :{
-				'imgURL' : 'path/to/img.jpg',
+				'imgURL' : 'http://i.imgur.com/VisMKc3.jpg',
 				'description' : 'classic-cake'
 			},
 			"opt2":{
