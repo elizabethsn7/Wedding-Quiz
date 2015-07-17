@@ -13,4 +13,8 @@ nav {
 
 .category div.option {
   display: inline-block;
+
+}
+.category {
+	margin: 35px;
 }
