@@ -2,6 +2,8 @@
 $(document).ready(function() {
 	console.log('ready');
 
+
+
 	$('form').submit(function(e) {
 		e.preventDefault();
 
@@ -10,6 +12,9 @@ $(document).ready(function() {
 		}
 
 	})
+
+
+	$('.category.dresses').
 
 
 		var category = {
@@ -220,12 +225,10 @@ function showCategory() {
 
 		var cake = category.cake
 		'<h2>' + cake.categoryTitle + '<h2>'
-
 		
 	}
 
-if 
-
+// if 
 	// $('ul').on('click', '.option', function() {
 	// 	console.log('clicked category')
 	// })
