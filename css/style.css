@@ -10,6 +10,13 @@ nav {
 	width: 90%; 
 }
 
+h1 {
+	padding-left: 15px;
+}
+
+p {
+	padding-left: 20px;
+}
 
 .category div.option {
   display: inline-block;
@@ -18,10 +25,8 @@ nav {
 .category {
 	margin: 35px;
 }
-.category.dresses {
-
-}
-
-.category.rings {
-	
+.dresses {
+	width: 20px;
+	float: left;
+	vertical-align: middle;
 }
