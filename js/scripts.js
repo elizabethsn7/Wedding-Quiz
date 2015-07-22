@@ -11,20 +11,20 @@ $(document).ready(function() {
       'categoryTitle': 'Dresses',
 
       'opt1': {
-        'imgURL': "../images/dress_classic.jpg",
+        'imgURL': 'dress_classic',
         'description': 'classic-dress'
       },
       'opt2': {
-        'imgURL': '../images/dress_modern.jpg',
+        'imgURL': 'dress_modern',
         'description': 'modern'
 
       },
       'opt3': {
-        'imgURL': '../images/dress_shabby.jpg',
+        'imgURL': 'dress_shabby',
         'description': 'shabby chic'
       },
       'opt4': {
-        'imgURL': '../images/dress_glam.jpg',
+        'imgURL': 'dress_glam',
         'description': 'glam'
       }
     }
@@ -39,12 +39,14 @@ $(document).ready(function() {
   	var opt4 = category.dresses.opt4.imgURL;
 
   	$('.category').append('<h2>' + categoryTitle + '</h2>');
-  	$('.category').append('<img>' + opt1 + '</img>'); //psuedo 
-  	$('.category').append('<img>' + opt2 + '</img>');
-  	$('.category').append('<img>' + opt3 + '</img>');
-  	$('.category').append('<img>' + opt4 + '</img>');
-  	
+  	$('.category').append('<form></form>');
 
+
+  	$('.category form').append('<label><img src="images/' + opt1 + '.jpg"/><input type="radio" name="dress" value="choice-1"></label>'); 
+  	$('.category form').append('<label><img src="images/' + opt2 + '.jpg"/><input type="radio" name="dress" value="choice-2"></label>');
+  	$('.category form').append('<label><img src="images/' + opt3 + '.jpg"/><input type="radio" name="dress" value="choice-3"></label>');
+  	$('.category form').append('<label><img src="images/' + opt4 + '.jpg"/><input type="radio" name="dress" value="choice-4"></label>');
+  	$('.category form').append('<input type="submit" value="Submit">');
   }
 
 	  
