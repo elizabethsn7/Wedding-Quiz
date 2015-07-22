@@ -11,24 +11,24 @@ $(document).ready(function() {
       'categoryTitle': 'Dresses',
 
       'opt1': {
-        'imgURL': '../images/dress_classic',
+        'imgURL': "../images/dress_classic.jpg",
         'description': 'classic-dress'
       },
       'opt2': {
-        'imgURL': '../images/dress_modern',
+        'imgURL': '../images/dress_modern.jpg',
         'description': 'modern'
 
       },
       'opt3': {
-        'imgURL': '../images/dress_shabby',
+        'imgURL': '../images/dress_shabby.jpg',
         'description': 'shabby chic'
       },
       'opt4': {
-        'imgURL': '../images/dress_glam',
+        'imgURL': '../images/dress_glam.jpg',
         'description': 'glam'
       }
     }
-  }
+  };
 
 
   function callCategory() {
@@ -40,17 +40,12 @@ $(document).ready(function() {
 
   	$('.category').append('<h2>' + categoryTitle + '</h2>');
   	$('.category').append('<img>' + opt1 + '</img>'); //psuedo 
-  	console.log("options");
   	$('.category').append('<img>' + opt2 + '</img>');
   	$('.category').append('<img>' + opt3 + '</img>');
   	$('.category').append('<img>' + opt4 + '</img>');
   	
 
-
-
-
-
-  };
+  }
 
 	  
 
@@ -67,7 +62,7 @@ $(document).ready(function() {
 	    $(dot + itemCategory).show();
 	    callCategory();
 
-	    console.log(dot + itemCategory)
+	    console.log(dot + itemCategory);
 
   });
 
