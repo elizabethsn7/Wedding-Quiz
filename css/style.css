@@ -6,6 +6,8 @@ body {
 .top-p {
 	font-family: "grafolita-script", sans-serif;
 	text-align: center;
+	font-size: 30px;
+	margin-top: 60px;
 }
 
 p {
@@ -14,21 +16,19 @@ p {
 }
 
 nav {
-	background-color: #290000;
+	background-color: #e5a8b2;
 	border: 1px solid #dedede;
 	border-radius: 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
 	color: #888;
-	margin: 8px 22px 8px 22px;
 	overflow: hidden;
-	width: 90%; 
+	width: 100%; 
 	list-style: none;
 }
 
 nav ul {
 	list-style: none;
 	text-align: center;
-	margin: 10px;
 }
 
 nav li {
@@ -42,7 +42,7 @@ nav a {
   font-family: "bistro-script-web",sans-serif;
   font-size: 30px;
   text-decoration: none;
-  color: #fff;
+  color: #2d2b29;
   padding-right: 30px;
 }
 
