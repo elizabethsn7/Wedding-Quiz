@@ -30,7 +30,6 @@ $(document).ready(function() {
     }
   };
 
-
   function callCategory() {
   	var categoryTitle = category.dresses.categoryTitle;
   	var opt1 = category.dresses.opt1.imgURL;
@@ -52,14 +51,11 @@ $(document).ready(function() {
   	
   }
 
-
 	$('.category').on('click', 'img', function() {
 		console.log(this);
 		$('.category img').removeClass('checked')
 		$(this).addClass('checked')
 	})
-
-
 
 	  $('.category').hide();
 
