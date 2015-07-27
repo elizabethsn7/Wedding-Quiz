@@ -3,6 +3,11 @@ body {
 	background-image: url("../images/background.png");
 	background-repeat: repeat;
 }
+.top-p {
+	font-family: "grafolita-script", sans-serif;
+	text-align: center;
+}
+
 p {
 	font-family: "grafolita-script", sans-serif;
 	text-align: center;
@@ -42,11 +47,11 @@ nav a {
 }
 
 h1 {
-	padding-left: 15px;
+  text-align: center;
 }
 
 p {
-	padding-left: 
+  padding-left: 
 }
 
 .category {
