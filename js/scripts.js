@@ -6,6 +6,31 @@ $(document).ready(function() {
     console.log('submit');
   });
 
+var category = {
+    'rings': {
+      'categoryTitle': 'Rings',
+
+      'opt1': {
+        'imgURL': 'dress_classic_lg',
+        'description': 'classic'
+      },
+      'opt2': {
+        'imgURL': 'dress_modern_lg',
+        'description': 'modern'
+
+      },
+      'opt3': {
+        'imgURL': 'dress_shabby',
+        'description': 'shabby chic'
+      },
+      'opt4': {
+        'imgURL': 'dress_glam_lg',
+        'description': 'glam'
+      }
+    }
+  };
+
+
   var category = {
     'dresses': {
       'categoryTitle': 'Dresses',
