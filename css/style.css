@@ -4,7 +4,7 @@ body {
 	background-repeat: repeat;
 }
 p {
-	font-family: "bistro-script", sans-serif;
+	font-family: "bistro-script-web", sans-serif;
 	text-align: center;
 }
 
@@ -35,7 +35,7 @@ nav li {
 
 nav a {
   font-family: "grafolita-script",sans-serif;
-  font-size: 22px;
+  font-size: 30px;
   text-decoration: none;
   color: #fff;
   padding-right: 30px;
