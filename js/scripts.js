@@ -62,7 +62,7 @@ var category = {
   	var opt3 = category.dresses.opt3.imgURL;
   	var opt4 = category.dresses.opt4.imgURL;
 
-  	$('.category').append('<h2>' + categoryTitle + '</h2>');
+  	// $('.category').append('<h2>' + categoryTitle + '</h2>');
   	$('.category').append('<form></form>');
 
   	$('.form').wrap('<h2>')
