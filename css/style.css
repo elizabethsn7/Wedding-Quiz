@@ -8,6 +8,7 @@ body {
 	text-align: center;
 	font-size: 30px;
 	margin-top: 32px;
+	word-spacing: 20px;
 }
 
 p {
@@ -50,8 +51,9 @@ nav a {
 h1 {
 font-family: "fira-sans-2",sans-serif;
 font-style: normal;
-font-weight: 400; 
-  text-align: center;
+font-size: 45px;
+text-align: center;
+margin: 0 10px;
 }
 
 p {
