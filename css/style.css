@@ -35,9 +35,10 @@ nav li {
 
 nav a {
   font-family: "grafolita-script",sans-serif;
+  font-size: 22px;
   text-decoration: none;
   color: #fff;
-  
+  padding-right: 30px;
 }
 
 h1 {
