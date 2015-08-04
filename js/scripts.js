@@ -49,10 +49,17 @@ $(document).ready(function() {
 		$(this).addClass('checked')
 	})
 
+  var classic = [];
+  var modern  = [];
+  var shabby  = [];
+  var glam    = [];
+
 	$('form').submit(function(e) {
   e.preventDefault();
   console.log('submit');
   });
+
+
 
 });
 

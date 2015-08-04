@@ -84,8 +84,8 @@ p {
 
 label {
 	cursor: pointer;
-	width: 25%;
-	display: inline-block;
+	
+	display: block;
 }
 
 form {
