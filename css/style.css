@@ -2,6 +2,7 @@ body {
 	
 	background-image: url("../images/background.png");
 	background-repeat: repeat;
+	background-attachment: fixed;
 }
 
 .topBorder{
@@ -84,7 +85,6 @@ p {
 
 label {
 	cursor: pointer;
-	
 	display: block;
 }
 
