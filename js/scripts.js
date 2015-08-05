@@ -40,6 +40,7 @@ $(document).ready(function() {
 
   $('.category').empty();
 	  callCategory();
+
   });
 
 // option selection
@@ -49,14 +50,23 @@ $(document).ready(function() {
 		$(this).addClass('checked')
 	})
 
+
+    if ($.itemCategory === Dresses || Shoes) {
+        console.log("vertical layout")
+      }
+
   var classic = [];
   var modern  = [];
   var shabby  = [];
   var glam    = [];
 
 	$('form').submit(function(e) {
-  e.preventDefault();
-  console.log('submit');
+    e.preventDefault();
+    console.log('submit');
+
+    if ($.category === Dresses || Shoes) {
+        console.log("vertical layout")
+      }
   });
 
 
