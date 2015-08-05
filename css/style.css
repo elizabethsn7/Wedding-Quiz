@@ -87,6 +87,7 @@ p {
 label {
 	cursor: pointer;
 	display: inline-block;
+
 }
 
 form {
@@ -101,7 +102,6 @@ form {
 
 img.checked {
 	box-shadow: 2px 2px 2px 1px 0px red;
-	padding-bottom: 15px;
 }
 
 .submit {
