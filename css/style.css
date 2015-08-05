@@ -3,10 +3,7 @@ body {
 	background-image: url("../images/background.png");
 	background-repeat: repeat;
 	background-attachment: fixed;
-<<<<<<< HEAD
-=======
 
->>>>>>> c556a8afc8646b0ad2ab6dea3c1c8751e7a4c1d6
 }
 
 .topBorder{
@@ -89,7 +86,7 @@ p {
 
 label {
 	cursor: pointer;
-	display: block;
+	display: inline-block;
 }
 
 form {
