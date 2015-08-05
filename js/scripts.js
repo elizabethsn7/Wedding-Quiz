@@ -51,7 +51,7 @@ $(document).ready(function() {
 	})
 
 
-    if ($.itemCategory === Dresses || Shoes) {
+    if ($.nav === Dresses || Shoes) {
         console.log("vertical layout")
       }
 
