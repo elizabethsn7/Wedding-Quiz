@@ -37,9 +37,19 @@ $(document).ready(function() {
 	  
 	  console.log(itemCategory)
 
-
   $('.category').empty();
 	  callCategory();
+
+  //remove all classes except .category
+  $('.category').attr('class', 'category');
+
+  //add the itemCategory class to .category
+  $('.category').addClass(itemCategory);
+
+  //test if you just added .shoes or .dresses
+  if ($('.category').hasClass('dresses') || $('.category').hasClass('.shoes')) {
+    console.log("vertical layout")
+  }
 
   });
 
@@ -49,11 +59,6 @@ $(document).ready(function() {
 		$('.category img').removeClass('checked')
 		$(this).addClass('checked')
 	})
-
-
-    if ($.nav === Dresses || Shoes) {
-        console.log("vertical layout")
-      }
 
   var classic = [];
   var modern  = [];
