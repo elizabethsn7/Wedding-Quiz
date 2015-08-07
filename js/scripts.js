@@ -69,9 +69,9 @@ $(document).ready(function() {
     e.preventDefault();
     console.log('submit');
 
-    if ($.category === Dresses || Shoes) {
-        console.log("vertical layout")
-      }
+    $('itemCategory').val();
+    console.log("checked boxes")
+
   });
 
 
