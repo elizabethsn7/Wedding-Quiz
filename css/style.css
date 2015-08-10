@@ -71,14 +71,14 @@ nav a {
 }
 
 h1 {
-font-family: "trajan-sans-pro",sans-serif;
-font-style: normal;
-font-weight: 400;
-font-style: normal;
-font-size: 35px;
-text-align: center;
-margin: 25px;
-color: #31302f;
+	font-family: "trajan-sans-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 35px;
+	text-align: center;
+	margin: 25px;
+	color: #31302f;
 }
 
 .category {
@@ -90,8 +90,13 @@ color: #31302f;
 label {
 	cursor: pointer;
 	display: inline-block;
-
+	width: 100%;
 }
+
+.portrait label {
+	width: 50%;
+}
+
 input[type="radio"] {
 	display: none;
 }
@@ -123,12 +128,7 @@ label img {
 	width: 100%;
 	height: auto;
 }
-@media screen and (min-width: 321px) {
-	label {
-		width: 100%;
-	}
-	
-}
+
 @media screen and (min-width: 640px) {
 	label {
 		width: 50%;
