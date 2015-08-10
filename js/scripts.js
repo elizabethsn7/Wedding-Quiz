@@ -79,24 +79,25 @@ function callCategory() {
     
     console.log("selectedOption");
 
-    if (selectedOption = "classic") {
-      console.log('classicValue')
+if (selectedOption = "classic") {
+      console.log('classic value');
       classicArray.push('1');
       console.log(classicArray);
     }
     else if (selectedOption = "modern") {
       console.log('modern value');
       modernArray.push('1');
-      console.log('modern value');
+      console.log(modernArray);
     }
     else if (selectedOption = "shabby") {
       console.log('shabby value');
       shabbyArray.push('1');
-      console.log('modern value');
+      console.log(shabbyArray);
     }
     else if (selectedOption = "glam") {
       console.log('glam value');
-      glamArray.push('1')
+      glamArray.push('1');
+      console.log(glamArray);
       }
      
 
