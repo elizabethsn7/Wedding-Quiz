@@ -39,7 +39,7 @@ function callCategory() {
 	  
 	  console.log(itemCategory)
 
-    $('.category').empty();
+    $('.category').empty(); 
 
   //remove all classes except .category
   $('.category').attr('class', 'category');
