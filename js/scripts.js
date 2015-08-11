@@ -103,12 +103,28 @@ if (selectedOption === "classic") {
      // $('.category').empty();
   });
 
+// results
+
+var categoryArray = []
+  var classicArray = [];
+  var modernArray = [];
+  var shabbyArray = [];
+  var glamArray = [];
+
+  categoryArray.length;
+  console.log("categoryArray")
+
+
+
+
+
+  if ( '.classicArray'.length > '.modernArray'.length && '.classicArray'.length > '.shabbyArray'.length && '.classicArray'.length > '.glamArray'.length) {
+    console.log("something");
+  }
 
 });
 
-// results
 
-// if classic.length > modern.length && classic.length > shabby.length && classic.length > glam.length
 
 
 
