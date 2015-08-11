@@ -24,23 +24,23 @@ $(document).ready(function() {
     var glam    = options.glam;
 
 
-  	$('.category').append('<form></form>');
+    $('.category').append('<form></form>');
   
-  	$('.category form').append('<label><img src="images/' + itemCategory + classic + '.jpg"/><input type="radio" name="' + itemCategory + '" value="classic"></label>'); 
-  	$('.category form').append('<label><img src="images/' + itemCategory + modern + '.jpg"/><input type="radio" name="' + itemCategory + '" value="modern"></label>');
-  	$('.category form').append('<label><img src="images/' + itemCategory + shabby + '.jpg"/><input type="radio" name="' + itemCategory + '" value="shabby"></label>');
-  	$('.category form').append('<label><img src="images/' + itemCategory + glam + '.jpg"/><input type="radio" name="' + itemCategory + '" value="glam"></label>');
-  	$('.category form').append('<input class="submit" type="submit" value="Submit">')
+    $('.category form').append('<label><img src="images/' + itemCategory + classic + '.jpg"/><input type="radio" name="' + itemCategory + '" value="classic"></label>'); 
+    $('.category form').append('<label><img src="images/' + itemCategory + modern + '.jpg"/><input type="radio" name="' + itemCategory + '" value="modern"></label>');
+    $('.category form').append('<label><img src="images/' + itemCategory + shabby + '.jpg"/><input type="radio" name="' + itemCategory + '" value="shabby"></label>');
+    $('.category form').append('<label><img src="images/' + itemCategory + glam + '.jpg"/><input type="radio" name="' + itemCategory + '" value="glam"></label>');
+    $('.category form').append('<input class="submit" type="submit" value="Submit">')
   }
 
 
   // category navigation
    $('nav').on('click', 'a', function() {
-	 console.log('nav item clicked');
+   console.log('nav item clicked');
 
-	  itemCategory = $(this).text().toLowerCase();
-	  
-	  console.log(itemCategory)
+    itemCategory = $(this).text().toLowerCase();
+    
+    console.log(itemCategory)
 
     $('.category').empty(); 
 
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
 
 //form submission
-	$('.category').on('submit', 'form', function(e) {
+  $('.category').on('submit', 'form', function(e) {
     e.preventDefault();
     console.log('submit');
 
@@ -109,6 +109,11 @@ if (selectedOption === "classic") {
 // results
 
 // if classic.length > modern.length && classic.length > shabby.length && classic.length > glam.length
+
+
+
+
+
 
 
 
