@@ -2,12 +2,14 @@ $(document).ready(function() {
   console.log('ready');
 
   var itemCategory;
-  
 
+    var classicArray = [];
+    var modernArray  = [];
+    var shabbyArray  = [];
+    var glamArray = [];
 
-function callCategory() {
-
-  console.log(itemCategory)
+  function callCategory() {
+      console.log(itemCategory)
 
   var options = {
       'classic' : '_classic',
@@ -16,11 +18,11 @@ function callCategory() {
       'glam'    : '_glam'
   };
 
+    var classic = options.classic;
+    var modern  = options.modern;
+    var shabby  = options.shabby;
+    var glam    = options.glam;
 
-  	var classic = options.classic;
-  	var modern  = options.modern;
-  	var shabby  = options.shabby;
-  	var glam    = options.glam;
 
   	$('.category').append('<form></form>');
   
@@ -30,6 +32,7 @@ function callCategory() {
   	$('.category form').append('<label><img src="images/' + itemCategory + glam + '.jpg"/><input type="radio" name="' + itemCategory + '" value="glam"></label>');
   	$('.category form').append('<input class="submit" type="submit" value="Submit">')
   }
+
 
   // category navigation
    $('nav').on('click', 'a', function() {
@@ -65,10 +68,6 @@ function callCategory() {
   })
 
 
-  var classicArray = [];
-  var modernArray  = [];
-  var shabbyArray  = [];
-  var glamArray = [];
 
 //form submission
 	$('.category').on('submit', 'form', function(e) {
@@ -77,24 +76,24 @@ function callCategory() {
 
     var selectedOption = $('.checked').next('input').val();
     
-    console.log("selectedOption");
+    console.log(selectedOption);
 
-if (selectedOption = "classic") {
+if (selectedOption === "classic") {
       console.log('classic value');
       classicArray.push('1');
       console.log(classicArray);
     }
-    else if (selectedOption = "modern") {
+    else if (selectedOption === "modern") {
       console.log('modern value');
       modernArray.push('1');
       console.log(modernArray);
     }
-    else if (selectedOption = "shabby") {
+    else if (selectedOption === "shabby") {
       console.log('shabby value');
       shabbyArray.push('1');
       console.log(shabbyArray);
     }
-    else if (selectedOption = "glam") {
+    else if (selectedOption === "glam") {
       console.log('glam value');
       glamArray.push('1');
       console.log(glamArray);
