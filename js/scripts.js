@@ -105,22 +105,25 @@ if (selectedOption === "classic") {
 
 // results
 
-var categoryArray = []
-  var classicArray = [];
-  var modernArray = [];
-  var shabbyArray = [];
-  var glamArray = [];
+var categoryArray = 'itemCategory'
 
   categoryArray.length;
   console.log("categoryArray")
 
 
+//pseudo code for for loop
 
+// for (var categoryArray = 0;; categoryArray) {
+//   console.log(categoryArray);
+//   if (categoryArray > 3);
+//   console.log(classicArray)
 
 
   if ( '.classicArray'.length > '.modernArray'.length && '.classicArray'.length > '.shabbyArray'.length && '.classicArray'.length > '.glamArray'.length) {
     console.log("something");
   }
+
+// };
 
 });
 
