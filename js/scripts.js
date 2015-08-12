@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 // option selection
   $('.category').on('click', 'img', function() {
-    console.log(this);
+    console.log('image');
     $('.category img').removeClass('checked')
     $(this).addClass('checked')
   })
@@ -98,25 +98,25 @@ if (selectedOption === "classic") {
       glamArray.push('1');
       console.log(glamArray);
       }
-     
 
+var propertyArray = ['dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'details', 'favors', 'cake'];
+  propertyArray.length;
+
+for (var propertyArray = 0;; propertyArray++) {
+  console.log(propertyArray);
+  if (propertyArray < 8) break;
+
+  else if ( 'classic'.length > 'modern'.length && 'classic'.length > 'shabby'.length && 'classic'.length > 'glam'.length) 
+    console.log(classicArray);
+
+  else if ( 'classic'.length > 'modern'.length && 'classic'.length > 'shabby'.length && 'classic'.length > 'glam'.length) 
+    console.log(classicArray);
+  }
      // $('.category').empty();
+  
   });
 
 // results
-
-var categoryArray = ['dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'details', 'favors', 'cake'];
-
-  categoryArray.length;
-
-for (var categoryArray = 0;; categoryArray++) {
-  console.log(categoryArray);
-  if (categoryArray > 8) break;
-
-  else  ( 'classic'.length > 'modern'.length && 'classic'.length > 'shabby'.length && 'classic'.length > 'glam'.length) 
-    console.log(classicArray);
-  }
-
 // };
 
 });
