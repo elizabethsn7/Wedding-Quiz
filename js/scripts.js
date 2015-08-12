@@ -102,13 +102,22 @@ if (selectedOption === "classic") {
 var propertyArray = ['dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'details', 'favors', 'cake'];
   propertyArray.length;
 
-for (var propertyArray = 0;; propertyArray++) {
+for (propertyArray;; propertyArray++) {
   console.log(propertyArray);
 
-  if (propertyArray < 8) break;
+  if (propertyArray < 8);
 
   else if ( 'classic'.length > 'modern'.length && 'classic'.length > 'shabby'.length && 'classic'.length > 'glam'.length) 
-    console.log(classicArray);
+    console.log('classicArray');
+
+  else if ( 'modern'.length > 'classic'.length && 'modern'.length > 'shabby'.length && 'modern'.length > 'glam'.length) 
+    console.log('modernArray');
+
+  else if ( 'shabby'.length > 'modern'.length && 'shabby'.length > 'classic'.length && 'shabby'.length > 'glam'.length) 
+    console.log('shabbyArray');
+
+  else if ( 'glam'.length > 'modern'.length && 'glam'.length > 'classic'.length && 'glam'.length > 'shabby'.length) 
+    console.log('glamArray');
 
   }
      // $('.category').empty();
