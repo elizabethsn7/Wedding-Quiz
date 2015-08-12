@@ -104,13 +104,12 @@ var propertyArray = ['dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'detail
 
 for (var propertyArray = 0;; propertyArray++) {
   console.log(propertyArray);
+
   if (propertyArray < 8) break;
 
   else if ( 'classic'.length > 'modern'.length && 'classic'.length > 'shabby'.length && 'classic'.length > 'glam'.length) 
     console.log(classicArray);
 
-  else if ( 'classic'.length > 'modern'.length && 'classic'.length > 'shabby'.length && 'classic'.length > 'glam'.length) 
-    console.log(classicArray);
   }
      // $('.category').empty();
   
