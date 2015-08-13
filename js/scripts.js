@@ -99,13 +99,13 @@ if (selectedOption === "classic") {
       console.log(glamArray);
       }
 
-var propertyArray = ['dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'details', 'favors', 'cake'];
+var propertyArray = ['classisc', 'modern', 'shabby', 'glam'];
   propertyArray.length;
-
-for (propertyArray;; propertyArray++) {
   console.log(propertyArray);
 
-  if (propertyArray < 8);
+for (propertyArray;; propertyArray++) {
+
+  if (propertyArray > 0);
 
   else if ( 'classic'.length > 'modern'.length && 'classic'.length > 'shabby'.length && 'classic'.length > 'glam'.length) 
     console.log('classicArray');
@@ -119,10 +119,9 @@ for (propertyArray;; propertyArray++) {
   else if ( 'glam'.length > 'modern'.length && 'glam'.length > 'classic'.length && 'glam'.length > 'shabby'.length) 
     console.log('glamArray');
 
-  }
+  };
      // $('.category').empty();
-  
-  });
+
 
 // results
 // };
