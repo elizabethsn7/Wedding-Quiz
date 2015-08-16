@@ -1,5 +1,4 @@
-var categoryArray = ['dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'details', 'favors', 'cakes'];
-
+var categoryArray = ['start quiz', 'dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'details', 'favors', 'cake'];
 
 var itemCategory;
 
@@ -7,6 +6,7 @@ var classicArray = [];
 var modernArray  = [];
 var shabbyArray  = [];
 var glamArray = [];
+
 
 $(document).ready(function() {
   console.log('ready');
@@ -26,120 +26,121 @@ $(document).ready(function() {
     //test if you just added .shoes or .dresses
     if ($('.category').hasClass('dresses') || $('.category').hasClass('shoes')) {
       console.log("vertical layout")
-    $('.category').addClass('portrait');
+      $('.category').addClass('portrait');
+    }
   }
-}
 
 
-function callCategory() {
+  function callCategory() {
 
-   categoryClass();
+    categoryClass();
 
-   console.log(itemCategory)
+    console.log(itemCategory)
 
-//this was var options
-  var personalityTypes = {
+    //this var options
+    var personalityTypes = {
       'classic' : '_classic',
       'modern'  : '_modern',
       'shabby'  : '_shabby',
       'glam'    : '_glam'
-  };
+    };
 
     var classic = personalityTypes.classic;
     var modern  = personalityTypes.modern;
     var shabby  = personalityTypes.shabby;
     var glam    = personalityTypes.glam;
 
+
     $('.category').append('<form></form>');
-  
-    $('.category form').append('<label><img src="images/' + itemCategory + classic + '.jpg"/><input type="radio" name="' + itemCategory + '" value="classic"></label>'); 
+
+    $('.category form').append('<label><img src="images/' + itemCategory + classic + '.jpg"/><input type="radio" name="' + itemCategory + '" value="classic"></label>');
     $('.category form').append('<label><img src="images/' + itemCategory + modern + '.jpg"/><input type="radio" name="' + itemCategory + '" value="modern"></label>');
     $('.category form').append('<label><img src="images/' + itemCategory + shabby + '.jpg"/><input type="radio" name="' + itemCategory + '" value="shabby"></label>');
     $('.category form').append('<label><img src="images/' + itemCategory + glam + '.jpg"/><input type="radio" name="' + itemCategory + '" value="glam"></label>');
-    $('.category form').append('<input class="submit" type="submit" value="Submit">')
+    $('.category form').append('<input class="submit" type="submit" value="Submit">');
   }
 
-  // category navigation
-   $('.category').on('click', '.submit', function() {
-   console.log('nav item clicked');
 
-    itemCategory = categoryArray [0]  
+  // category navigation
+   $('.category').on('click', '.submit', function(e) {
+    console.log('nav item clicked');
+    e.preventDefault();
+
+    categoryArray.shift();
+
+    itemCategory = categoryArray[0];
+
     console.log(itemCategory)
 
-  
-  callCategory();
-  
+    //this runs on form submission
+    var selectedOption = $('.checked').next('input').val();
+
+    console.log(selectedOption);
+
+    if (selectedOption === "classic") {
+      console.log('classic value');
+      classicArray.push('1');
+      console.log(classicArray);
+    }
+    else if (selectedOption === "modern") {
+      console.log('modern value');
+      modernArray.push('1');
+      console.log(modernArray);
+    }
+    else if (selectedOption === "shabby") {
+      console.log('shabby value');
+      shabbyArray.push('1');
+      console.log(shabbyArray);
+    }
+    else if (selectedOption === "glam") {
+      console.log('glam value');
+      glamArray.push('1');
+      console.log(glamArray);
+    }
+
+    console.log(classicArray);
+    console.log(modernArray);
+    console.log(shabbyArray);
+    console.log(glamArray);
+
+
+    callCategory();
+
   });
 
-// option selection
+
+
+  // option selection
   $('.category').on('click', 'img', function() {
-  console.log('image');
-  
-  $('.category img').removeClass('checked')
-  $(this).addClass('checked')
-  })
+    console.log('image');
+    $('.category img').removeClass('checked')
+    $(this).addClass('checked')
+  });
 
 });
 
-//form submission
-  $('.category').on('submit', 'form', function(e) {
-    e.preventDefault();
-    console.log('submit');
-});
-
-//     var selectedOption = $('.checked').next('input').val();
-    
-//     console.log(selectedOption);
-
-// if (selectedOption === "classic") {
-//       console.log('classic value');
-//       classicArray.push('1');
-//       console.log(classicArray);
-//     }
-//     else if (selectedOption === "modern") {
-//       console.log('modern value');
-//       modernArray.push('1');
-//       console.log(modernArray);
-//     }
-//     else if (selectedOption === "shabby") {
-//       console.log('shabby value');
-//       shabbyArray.push('1');
-//       console.log(shabbyArray);
-//     }
-//     else if (selectedOption === "glam") {
-//       console.log('glam value');
-//       glamArray.push('1');
-//       console.log(glamArray);
-//       }
-
-// var categoryArray = ['classis', 'modern', 'shabby', 'glam'];
-//   categoryArray.length;
-//   console.log(categoryArray);
 
 
 
-//   if (categoryArray = );
 
-//   else if ( 'classic'.length > 'modern'.length && 'classic'.length > 'shabby'.length && 'classic'.length > 'glam'.length) 
+
+// this code should determine the results
+
+
+// if (categoryArray.length == 0) {
+//   if ( classicArray.length > modernArray.length && classicArray.length > glamArray.length && classicArray.length > glamArray.length) {
 //     console.log('classicArray');
-
-//   else if ( 'modern'.length > 'classic'.length && 'modern'.length > 'shabby'.length && 'modern'.length > 'glam'.length) 
+//   }
+//   else if ( modernArray.length > classicArray.length && modernArray.length > glamArray.length && modernArray.length > glamArray.length) {
 //     console.log('modernArray');
-
-//   else if ( 'shabby'.length > 'modern'.length && 'shabby'.length > 'classic'.length && 'shabby'.length > 'glam'.length) 
+//   }
+//   else if ( shabby.length > modernArray.length && shabbyArray.length > classicArray.length && shabbyArray.length > glamArray.length) {
 //     console.log('shabbyArray');
-
-//   else if ( 'glam'.length > 'modern'.length && 'glam'.length > 'classic'.length && 'glam'.length > 'shabby'.length) 
+//   }
+//   else if ( glamArray.length > modernArray.length && glamArray.length > classicArray.length && glamArray.length > shabbyArray.length) {
 //     console.log('glamArray');
-
-
-//   });
-
-// // results
-// // };
-
-// });
-
+//   }
+// };
 
 
 
