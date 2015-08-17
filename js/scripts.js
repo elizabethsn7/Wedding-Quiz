@@ -25,8 +25,7 @@ $(document).ready(function() {
 
     //test if you just added .shoes or .dresses
     if ($('.category').hasClass('dresses') || $('.category').hasClass('shoes')) {
-      console.log("vertical layout")
-      $('.category').addClass('portrait');
+       $('.category').addClass('portrait');
     }
   }
 
@@ -112,35 +111,43 @@ $(document).ready(function() {
 
   // option selection
   $('.category').on('click', 'img', function() {
-    console.log('image');
     $('.category img').removeClass('checked')
     $(this).addClass('checked')
   });
-
-});
-
-
 
 
 
 
 // this code should determine the results
 
+var results = [ [classic, modern, shabby, glam]
+  var addArray = function (categoryArray)];
+  // var add = function ('modernArray');
+  // var add = function ('shabbyArray');
+  // var add = function ('glamArray');
 
-// if (categoryArray.length == 0) {
-//   if ( classicArray.length > modernArray.length && classicArray.length > glamArray.length && classicArray.length > glamArray.length) {
-//     console.log('classicArray');
-//   }
-//   else if ( modernArray.length > classicArray.length && modernArray.length > glamArray.length && modernArray.length > glamArray.length) {
-//     console.log('modernArray');
-//   }
-//   else if ( shabby.length > modernArray.length && shabbyArray.length > classicArray.length && shabbyArray.length > glamArray.length) {
-//     console.log('shabbyArray');
-//   }
-//   else if ( glamArray.length > modernArray.length && glamArray.length > classicArray.length && glamArray.length > shabbyArray.length) {
-//     console.log('glamArray');
-//   }
-// };
+
+if (categoryArray.length == 0) {
+  if ( classicArray.length > modernArray.length && classicArray.length > glamArray.length && classicArray.length > glamArray.length) {
+    console.log('classicArray');
+  }
+  else if ( modernArray.length > classicArray.length && modernArray.length > glamArray.length && modernArray.length > glamArray.length) {
+    console.log('modernArray');
+  }
+  else if ( shabby.length > modernArray.length && shabbyArray.length > classicArray.length && shabbyArray.length > glamArray.length) {
+    console.log('shabbyArray');
+  }
+  else if ( glamArray.length > modernArray.length && glamArray.length > classicArray.length && glamArray.length > shabbyArray.length) {
+    console.log('glamArray');
+  }
+}
+;
+
+
+
+
+
+});
 
 
 
