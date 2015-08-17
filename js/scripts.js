@@ -1,6 +1,7 @@
 var categoryArray = ['start quiz', 'dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'details', 'favors', 'cake'];
 
 var itemCategory;
+var result;
 
 var classicArray = [];
 var modernArray  = [];
@@ -57,8 +58,12 @@ $(document).ready(function() {
     $('.category form').append('<label><img src="images/' + itemCategory + shabby + '.jpg"/><input type="radio" name="' + itemCategory + '" value="shabby"></label>');
     $('.category form').append('<label><img src="images/' + itemCategory + glam + '.jpg"/><input type="radio" name="' + itemCategory + '" value="glam"></label>');
     $('.category form').append('<input class="submit" type="submit" value="Submit">');
-  }
+   }
 
+
+function callResult() {
+  $('.category').append('<h2>' + result + 'wedding</h2>')
+}
 
   // category navigation
    $('.category').on('click', '.submit', function(e) {
@@ -77,24 +82,24 @@ $(document).ready(function() {
     console.log(selectedOption);
 
     if (selectedOption === "classic") {
-      console.log('classic value');
+      console.log('classic' + 'classic value');
       classicArray.push('1');
-      console.log(classicArray);
+      //console.log(classicArray);
     }
     else if (selectedOption === "modern") {
-      console.log('modern value');
+      console.log('modern' + 'modern value');
       modernArray.push('1');
-      console.log(modernArray);
+      //console.log(modernArray);
     }
     else if (selectedOption === "shabby") {
-      console.log('shabby value');
+      console.log('shabby' + 'shabby value');
       shabbyArray.push('1');
       console.log(shabbyArray);
     }
     else if (selectedOption === "glam") {
-      console.log('glam value');
+      console.log('glam' + 'glam value');
       glamArray.push('1');
-      console.log(glamArray);
+      //console.log(glamArray);
     }
 
     console.log(classicArray);
@@ -103,11 +108,36 @@ $(document).ready(function() {
     console.log(glamArray);
 
 
-    callCategory();
+  if (categoryArray.length == 0) {
+    console.log('results');
+    $('.category').empty();
 
+
+    if ( classicArray.length >= modernArray.length && classicArray.length >= glamArray.length && classicArray.length >= glamArray.length) {
+      console.log('classicArray');
+      result = "classic"
+      callResult();
+      
+    }
+    else if ( modernArray.length >= classicArray.length && modernArray.length >= glamArray.length && modernArray.length >= glamArray.length) {
+      console.log('modernArray');
+      result = "modern"
+      callResult();
+    }
+    else if ( shabbyArray.length >= modernArray.length && shabbyArray.length >= classicArray.length && shabbyArray.length >= glamArray.length) {
+      console.log('shabbyArray');
+      result = "shabby"
+    }
+    else if ( glamArray.length >= modernArray.length && glamArray.length >= classicArray.length && glamArray.length >= shabbyArray.length) {
+      console.log('glamArray');
+      result = "glam"
+      callResult();
+      }
+    }
+    else { 
+      callCategory();
+    }
   });
-
-
 
   // option selection
   $('.category').on('click', 'img', function() {
@@ -116,36 +146,9 @@ $(document).ready(function() {
   });
 
 
-
-
 // this code should determine the results
 
-var results = [classic, modern, shabby, glam]
-  
-  // var add = function ('modernArray');
-  // var add = function ('shabbyArray');
-  // var add = function ('glamArray');
-
-
-if (categoryArray.length == 0) {
-  if ( classicArray.length > modernArray.length && classicArray.length > glamArray.length && classicArray.length > glamArray.length) {
-    console.log('classicArray');
-  }
-  else if ( modernArray.length > classicArray.length && modernArray.length > glamArray.length && modernArray.length > glamArray.length) {
-    console.log('modernArray');
-  }
-  else if ( shabby.length > modernArray.length && shabbyArray.length > classicArray.length && shabbyArray.length > glamArray.length) {
-    console.log('shabbyArray');
-  }
-  else if ( glamArray.length > modernArray.length && glamArray.length > classicArray.length && glamArray.length > shabbyArray.length) {
-    console.log('glamArray');
-  }
-  categoryArray.total = function ()
-};
-
-
-
-
+//var resultsArray = [classic, modern, shabby, glam]
 
 });
 
