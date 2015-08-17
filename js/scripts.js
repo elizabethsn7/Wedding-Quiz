@@ -120,8 +120,8 @@ $(document).ready(function() {
 
 // this code should determine the results
 
-var results = [ [classic, modern, shabby, glam]
-  var addArray = function (categoryArray)];
+var results = [classic, modern, shabby, glam]
+  
   // var add = function ('modernArray');
   // var add = function ('shabbyArray');
   // var add = function ('glamArray');
@@ -140,8 +140,8 @@ if (categoryArray.length == 0) {
   else if ( glamArray.length > modernArray.length && glamArray.length > classicArray.length && glamArray.length > shabbyArray.length) {
     console.log('glamArray');
   }
-}
-;
+  categoryArray.total = function ()
+};
 
 
 
