@@ -28,27 +28,10 @@ p {
 	margin: 0px 30px 0px 30px;
 }
 h2 {
-	font-family: "grafolita-script",sans-serif;
+	font-family: "fira-sans-2",sans-serif;
 	color: white;
 	text-align: center;
 	font-size: 3em;
-}
-
-
-
-nav li {
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  display: inline-block;
-}
-
-nav a {
- 
-  font-size: 40px;
-  text-decoration: none;
-  color: #2d2b29;
-  padding-right: 30px;
 }
 
 h1 {
@@ -76,6 +59,7 @@ label {
 
 .portrait label {
 	width: 50%;
+	display: inline-block;
 }
 
 input[type="radio"] {
