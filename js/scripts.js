@@ -12,6 +12,7 @@ var glamArray = [];
 $(document).ready(function() {
   console.log('ready');
 
+  $('body').addClass('pink');
 
   function categoryClass() {
     //define itemCategory
@@ -151,7 +152,6 @@ function callResult() {
 //var resultsArray = [classic, modern, shabby, glam]
 
 });
-
 
 
 

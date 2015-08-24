@@ -6,28 +6,19 @@ html {
 }
 
 body {
-
-	background-image: url("../images/background.png");
-	background-repeat: repeat;
-	background-attachment: fixed;
+background: white;
+transition:background-color 5s ease;
+text-align: center;
 }
 
-.topBorder{
-	background-color: #31302f;
-	padding-top: 32px;
-	padding-bottom: 5px;
-
+body.pink {
+	background: pink;
 }
-
-
-.top-p {
-	font-family: "grafolita-script", sans-serif;
-	text-align: center;
-	font-size: 40px;
-	color: white;
-	word-spacing: 20px;
+.page-wrapper {
+	max-width: 60em;
+	margin: 0 auto;
+	text-align: left;
 }
-
 
 p {
 	font-family: "trajan-sans-pro", sans-serif;
@@ -36,7 +27,10 @@ p {
 	color: white;
 	margin: 0px 30px 0px 30px;
 }
-
+h2 {
+	color: white;
+	text-align: center;
+}
 nav {
 	background-color: #e5a8b2;
 	border: 1px solid #dedede;
@@ -135,4 +129,3 @@ label img {
 		padding: 0 4px 4px;
 	}
 }
-
