@@ -28,26 +28,13 @@ p {
 	margin: 0px 30px 0px 30px;
 }
 h2 {
+	font-family: "grafolita-script",sans-serif;
 	color: white;
 	text-align: center;
-}
-nav {
-	background-color: #e5a8b2;
-	border: 1px solid #dedede;
-	border-radius: 4px;
-	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-	color: #888;
-	overflow: hidden;
-	width: 100%;
-	list-style: none;
-	border-top: 3px dotted;
-    border-bottom: 3px dotted;
+	font-size: 3em;
 }
 
-nav ul {
-	list-style: none;
-	text-align: center;
-}
+
 
 nav li {
   font-size: 1.2em;
@@ -57,7 +44,7 @@ nav li {
 }
 
 nav a {
-  font-family: "grafolita-script",sans-serif;
+ 
   font-size: 40px;
   text-decoration: none;
   color: #2d2b29;
