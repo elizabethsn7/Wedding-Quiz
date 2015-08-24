@@ -22,7 +22,7 @@ body.pink {
 
 p {
 	font-family: "grafolita-script", sans-serif;
-	font-size: 25px;
+	font-size: 3em;
 	text-align: center;
 	color: white;
 	margin: 0px 30px 0px 30px;
@@ -31,7 +31,7 @@ h2 {
 	font-family: "fira-sans-2",sans-serif;
 	color: white;
 	text-align: center;
-	font-size: 3em;
+	font-size: 5em;
 }
 
 h1 {
