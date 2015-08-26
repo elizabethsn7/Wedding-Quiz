@@ -58,7 +58,7 @@ $(document).ready(function() {
     $('.category form').append('<label><img src="images/' + itemCategory + modern + '.jpg"/><input type="radio" name="' + itemCategory + '" value="modern"></label>');
     $('.category form').append('<label><img src="images/' + itemCategory + shabby + '.jpg"/><input type="radio" name="' + itemCategory + '" value="shabby"></label>');
     $('.category form').append('<label><img src="images/' + itemCategory + glam + '.jpg"/><input type="radio" name="' + itemCategory + '" value="glam"></label>');
-    $('.category form').append('<input class="submit" type="submit" value="Submit">');
+    $('.category form').append('<input class="submit" type="submit" value="submit" style="display:none;" disabled>');
    }
 
 
@@ -142,8 +142,11 @@ function callResult() {
 
   // option selection
   $('.category').on('click', 'img', function() {
+    if($(this).hasClass('checked')) $('.submit').click();
     $('.category img').removeClass('checked')
     $(this).addClass('checked')
+    $('.submit').removeAttr('disabled');
+
   });
 
 
