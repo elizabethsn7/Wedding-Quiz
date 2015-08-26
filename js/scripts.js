@@ -30,7 +30,7 @@ $(document).ready(function() {
        $('.category').addClass('portrait');
     }
   }
-
+  // $('body').addClass('quiz-color').removeClass('pink');
 
   function callCategory() {
 
