@@ -12,7 +12,8 @@ var glamArray = [];
 $(document).ready(function() {
   console.log('ready');
 
-  $('body').addClass('pink');
+  $('body').addClass('quiz-color');
+  console.log('change background color');
 
   function categoryClass() {
     //define itemCategory
@@ -30,7 +31,6 @@ $(document).ready(function() {
        $('.category').addClass('portrait');
     }
   }
-  // $('body').addClass('quiz-color').removeClass('pink');
 
   function callCategory() {
 

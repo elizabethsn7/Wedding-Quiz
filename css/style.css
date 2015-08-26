@@ -7,12 +7,12 @@ html {
 
 body {
 background: white;
-transition:background-color 7s ease;
+transition:background-color 5s ease;
 text-align: center;
 }
 
-body.pink {
-	background: pink;
+.quiz-color {
+	background-color: #424041;
 }
 .page-wrapper {
 	max-width: 60em;
@@ -54,11 +54,10 @@ h1 {
 label {
 	cursor: pointer;
 	display: inline-block;
-	width: 100%;
+
 }
 
 .portrait label {
-	width: 50%;
 	display: inline-block;
 }
 
@@ -67,13 +66,8 @@ input[type="radio"] {
 }
 
 form {
-	margin-right: 35px;
-	margin-left: 35px;
 	margin-top: 30px;
-}
-
-.quiz-color {
-	background-color: black;
+	margin-left: 30px;
 }
 
 .img {
@@ -81,8 +75,7 @@ form {
 }
 
 img.checked {
-	border: 1px solid black;
-
+	border: 2px solid white;
 }
 
 .submit {
@@ -100,7 +93,7 @@ label img {
 
 @media screen and (min-width: 640px) {
 	label {
-		width: 50%;
+		/*width: 50%;*/
 		padding: 0 4px 4px;
 	}
 }
