@@ -1,5 +1,57 @@
 var categoryArray = ['start quiz', 'dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'details', 'favors', 'cake'];
 
+
+var resultsImages = {
+  'dresses' : [
+    'dress1.jpg',
+    'dress2.jpg',
+    'dress3.jpg',
+    'dress4.jpg',
+  ]
+  'rings': [
+    'rings1.jpg',
+    'rings2.jpg',
+    'rings3.jpg',
+    'rings4.jpg',
+  ]  
+  'ceremony': [
+    'ceremony1.jpg',
+    'ceremony2.jpg',
+    'ceremony3.jpg',
+    'ceremony4.jpg',
+  ]
+  'shoes': [
+    'shoes1.jpg',
+    'shoes2.jpg',
+    'shoes3.jpg',
+    'shoes4.jpg',
+  ]
+  'flowers': [
+    'flowers1.jpg',
+    'flowers2.jpg',
+    'flowers3.jpg',
+    'flowers4.jpg',
+  ]
+  'details': [
+    'details1.jpg',
+    'details2.jpg',
+    'details3.jpg',
+    'details4.jpg',
+  ]
+  'favors': [
+    'favors.1',
+    'favors2.jpg',
+    'favors3.jpg',
+    'favors4.jpg',
+  ]
+  'cake': [
+    'cake1.jpg',
+    'cake2.jpg',
+    'cake3.jpg',
+    'cake4.jpg',
+  ]
+}
+
 var itemCategory;
 var result;
 
