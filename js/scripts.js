@@ -115,7 +115,7 @@ $(document).ready(function() {
 
 
 function callResult() {
-  $('.category').append('<h2>' + result + 'wedding</h2>')
+  $('.category').append('<h2>' + result + '<br>Wedding</h2>')
 }
 
   // category navigation
