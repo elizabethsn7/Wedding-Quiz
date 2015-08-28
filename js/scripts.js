@@ -1,19 +1,28 @@
 var categoryArray = ['start quiz', 'dresses', 'rings', 'ceremony', 'shoes', 'flowers', 'details', 'favors', 'cake'];
 
 
-// var resultsImages = {
-//   'dresses' : [
-//     'dress1.jpg',
-//     'dress2.jpg',
-//     'dress3.jpg',
-//     'dress4.jpg',
-//   ]
-//   'rings': [
-//     'rings1.jpg',
-//     'rings2.jpg',
-//     'rings3.jpg',
-//     'rings4.jpg',
-//   ]  
+var resultsImages = {
+  'modern' : [
+    'modern1.jpg',
+    'modern2.jpg',
+    'modern3.jpg',
+    'modern4.jpg',
+    'modern5.jpg',
+    'modern6.jpg',
+    'modern7.jpg',
+  ]
+
+  'timeless': [
+    'timeless1.jpg',
+    'timeless2.jpg',
+    'timeless3.jpg',
+    'timeless4.jpg',
+    'timeless5.jpg',
+    'timeless6.jpg',
+    'timeless7.jpg',
+    'timeless8.jpg',
+
+  ]  
 //   'ceremony': [
 //     'ceremony1.jpg',
 //     'ceremony2.jpg',
@@ -203,9 +212,7 @@ function callResult() {
   });
 
 
-// this code should determine the results
 
-//var resultsArray = [timeless, modern, romantic, glam]
 
 });
 
