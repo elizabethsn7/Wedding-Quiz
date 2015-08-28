@@ -9,10 +9,10 @@ var resultsImages = {
     'modern4.jpg',
     'modern5.jpg',
     'modern6.jpg',
-    'modern7.jpg',
-  ]
+    'modern7.jpg'
+  ],
 
-  'timeless': [
+  'timeless' : [
     'timeless1.jpg',
     'timeless2.jpg',
     'timeless3.jpg',
@@ -20,9 +20,15 @@ var resultsImages = {
     'timeless5.jpg',
     'timeless6.jpg',
     'timeless7.jpg',
-    'timeless8.jpg',
+    'timeless8.jpg'
+  ],  
 
-  ]  
+  'glam' : [
+  ],
+
+  'romantic' : [
+  ],
+
 //   'ceremony': [
 //     'ceremony1.jpg',
 //     'ceremony2.jpg',
@@ -59,7 +65,7 @@ var resultsImages = {
 //     'cake3.jpg',
 //     'cake4.jpg',
 //   ]
-// }
+};
 
 var itemCategory;
 var result;
@@ -124,7 +130,15 @@ $(document).ready(function() {
 
 
 function callResult() {
-  $('.category').append('<h2>' + result + '<br>Wedding</h2>')
+  $('.category').append('<h2>' + 'You\'re going to have a ' + result + ' wedding</h2>')
+  console.log(resultsImages[result]);
+  var images = resultsImages[result];
+  $('h1').show();
+  $('p').hide();
+  for (var i = 0; i< images.length; i++) {
+    var img= $('<img>').attr('src','images/' + images[i]);
+    $('.page-wrapper').append(img);
+  }
 }
 
   // category navigation
@@ -177,23 +191,23 @@ function callResult() {
 
     if ( timelessArray.length >= modernArray.length && timelessArray.length >= romanticArray.length && timelessArray.length >= glamArray.length) {
       console.log('timelessArray');
-      result = "Timeless"
+      result = "timeless"
       callResult();
       
     }
     else if ( modernArray.length >= timelessArray.length && modernArray.length >= glamArray.length && modernArray.length >= romanticArray.length) {
       console.log('modernArray');
-      result = "Modern"
+      result = "modern"
       callResult();
     }
     else if ( romanticArray.length >= modernArray.length && romanticArray.length >= timelessArray.length && romanticArray.length >= glamArray.length) {
       console.log('romanticArray');
-      result = "Romantic"
+      result = "romantic"
       callResult();
     }
     else if ( glamArray.length >= modernArray.length && glamArray.length >= timelessArray.length && glamArray.length >= romanticArray.length) {
       console.log('glamArray');
-      result = "Glam"
+      result = "glam"
       callResult();
       }
     }
