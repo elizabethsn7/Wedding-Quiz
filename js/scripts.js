@@ -24,47 +24,28 @@ var resultsImages = {
   ],  
 
   'glam' : [
+    'glam1.jpg',
+    'glam2.jpg',
+    'glam3.jpg',
+    'glam4.jpg',
+    'glam5.jpg',
+    'glam6.jpg',
+    'glam7.jpg',
+    'glam8.jpg'
   ],
 
   'romantic' : [
+    'romantic1.jpg',
+    'romantic2.jpg',
+    'romantic3.jpg',
+    'romantic4.jpg',
+    'romantic5.jpg',
+    'romantic6.jpg',
+    'romantic7.jpg',
+    'romantic8.jpg'
   ],
 
-//   'ceremony': [
-//     'ceremony1.jpg',
-//     'ceremony2.jpg',
-//     'ceremony3.jpg',
-//     'ceremony4.jpg',
-//   ]
-//   'shoes': [
-//     'shoes1.jpg',
-//     'shoes2.jpg',
-//     'shoes3.jpg',
-//     'shoes4.jpg',
-//   ]
-//   'flowers': [
-//     'flowers1.jpg',
-//     'flowers2.jpg',
-//     'flowers3.jpg',
-//     'flowers4.jpg',
-//   ]
-//   'details': [
-//     'details1.jpg',
-//     'details2.jpg',
-//     'details3.jpg',
-//     'details4.jpg',
-//   ]
-//   'favors': [
-//     'favors.1',
-//     'favors2.jpg',
-//     'favors3.jpg',
-//     'favors4.jpg',
-//   ]
-//   'cake': [
-//     'cake1.jpg',
-//     'cake2.jpg',
-//     'cake3.jpg',
-//     'cake4.jpg',
-//   ]
+
 };
 
 var itemCategory;
