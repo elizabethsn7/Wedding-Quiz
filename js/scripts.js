@@ -111,7 +111,7 @@ $(document).ready(function() {
 
 
 function callResult() {
-  $('.category').append('<h2>' + 'You\'re going to have a ' + result + ' wedding</h2>')
+  $('.category').append('<h2>' + 'You\'re going to have a ' + result + ' wedding!</h2>')
   console.log(resultsImages[result]);
   var images = resultsImages[result];
   $('h1').show();
