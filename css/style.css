@@ -95,7 +95,7 @@ img.checked {
 	display: block;
 	border-radius: 3px;
 	color: white;
-	font:2.4em "lato";
+	font:2.4em lato;
     font-size:70%;
 }
 
