@@ -93,8 +93,10 @@ img.checked {
 	margin-top: 50px;
 	margin-bottom: 70px;
 	display: block;
-	border-radius: 10px;
+	border-radius: 3px;
 	color: white;
+	font:2.4em "lato";
+    font-size:70%;
 }
 
 label img {

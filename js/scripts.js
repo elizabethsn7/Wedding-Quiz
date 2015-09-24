@@ -106,7 +106,7 @@ $(document).ready(function() {
     $('.category form').append('<label><img src="images/' + itemCategory + modern + '.jpg"/><input type="radio" name="' + itemCategory + '" value="modern"></label>');
     $('.category form').append('<label><img src="images/' + itemCategory + romantic + '.jpg"/><input type="radio" name="' + itemCategory + '" value="romantic"></label>');
     $('.category form').append('<label><img src="images/' + itemCategory + glam + '.jpg"/><input type="radio" name="' + itemCategory + '" value="glam"></label>');
-    $('.category form').append('<input class="submit" type="submit" value="submit" style="display:none;" disabled>');
+    $('.category form').append('<input class="submit" type="submit" value="submit" disabled>');
    }
 
 
