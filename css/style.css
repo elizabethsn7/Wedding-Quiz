@@ -1,0 +1,112 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+background: white;
+transition:background-color 5s ease;
+text-align: center;
+}
+
+.quiz-color {
+	background-color: #424041;
+}
+.page-wrapper {
+	max-width: 60em;
+	margin: 0 auto;
+	text-align: left;
+}
+
+p {
+	font-family: "grafolita-script", sans-serif;
+	font-size: 3em;
+	text-align: center;
+	color: white;
+	margin: 0px 30px 0px 30px;
+}
+h2 {
+	font-family: "fira-sans-2",sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 5em;
+}
+
+h1 {
+	font-family: "grafolita-script",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 35px;
+	text-align: center;
+	margin: 25px;
+	color: white;
+}
+
+.hidden {
+	display: none;
+}
+
+.category {
+	margin: 0 auto;
+	max-width: 960px;
+
+}
+
+label {
+	cursor: pointer;
+	display: inline-block;
+
+}
+
+.portrait label {
+	display: inline-block;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+form {
+	margin-top: 30px;
+	text-align: center;
+}
+
+form label {
+	margin: 0 auto;
+}
+ 
+img {
+	border: 2px solid transparent;
+}
+.img {
+	padding-right: 10px;
+}
+
+img.checked {
+	border: 2px solid white;
+}
+
+.submit {
+	margin-top: 50px;
+	margin-bottom: 70px;
+	display: block;
+	border-radius: 3px;
+	color: white;
+	font:2.4em lato;
+    font-size:70%;
+}
+
+label img {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (min-width: 640px) {
+	label {
+		/*width: 50%;*/
+		padding: 0 4px 4px;
+	}
+}
